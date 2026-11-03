@@ -1,0 +1,10 @@
+{
+  "name": "@exhume/server",
+  "private": true,
+  "scripts": {
+    "dev": "go run ./cmd/api",
+    "build": "go build -o bin/ ./cmd/api",
+    "test": "go test ./...",
+    "lint": "go vet ./..."
+  }
+}

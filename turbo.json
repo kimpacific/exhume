@@ -1,0 +1,13 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["**/*.go", "go.mod", "go.sum", "app/**", "src/**", "public/**"],
+      "outputs": ["bin/**", ".next/**", "!.next/cache/**"]
+    },
+    "test": {},
+    "lint": {},
+    "dev": { "cache": false, "persistent": true }
+  }
+}

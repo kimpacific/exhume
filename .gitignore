@@ -1,0 +1,6 @@
+node_modules
+.next
+.turbo
+apps/server/bin
+.env*
+!.env.example
